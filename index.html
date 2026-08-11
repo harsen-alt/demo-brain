@@ -24,6 +24,16 @@
   #Prateek-slokam { background:#8fbfa8; border-color:#1b4332; }
   #Prateek-slokam h2 a, #Prateek-slokam .empty { color:#1b4332; }
   #Prateek-slokam a { border-bottom-color:#1b4332; }
+.glass-card { background: linear-gradient(135deg, rgba(33,175,231,0.25), rgba(29,233,182,0.25)); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.18); border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.25); padding: 24px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.glass-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(33,175,231,0.35); }
+.card-header { display:flex; align-items:center; gap:14px; margin-bottom:14px; }
+.avatar { width:56px; height:56px; border-radius:50%; object-fit:cover; border:2px solid rgba(255,255,255,0.4); }
+.glass-card .role { color: rgba(255,255,255,0.85); font-size:.85rem; margin:4px 0 0; }
+.tags { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px; }
+.tag { background: rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.25); border-radius:20px; padding:4px 10px; font-size:.72rem; color:#fff; }
+.links { display:flex; align-items:center; gap:12px; }
+.links a { color:#fff; font-size:.85rem; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.4); }
+.icon-link { font-size:1.1rem; border-bottom:none !important; }
 </style>
 </head>
 <body>
@@ -31,6 +41,7 @@
 <header>
   <h1>Demo Brain</h1>
   <p class="sub">One repo. Many terminals. Claim your card and make it yours.</p>
+<p class="sub"><strong>9</strong> of <strong>23</strong> cards claimed</p>
 </header>
 
 <main>
@@ -118,15 +129,32 @@
 <!-- ===== START sushantM4C ===== -->
 <section class="card" id="sushantM4C">
   <h2><a href="https://github.com/sushantM4C">@sushantM4C</a></h2>
-  <p>Sushant - Mantra4Change</p>
+  <p style="font-size:2.2rem; margin:8px 0;">🏀 👟</p>
+  <p>SUSHANT - MANTRA4CHANGE</p>
   <p class="empty">Learning git one command at a time.</p>
 </section>
 <!-- ===== END sushantM4C ===== -->
 
 <!-- ===== START nishantkumar-m4c ===== -->
-<section class="card" id="nishantkumar-m4c" style="background:linear-gradient(135deg, #21afe7, #1de9b6);">
-  <h2><a href="https://github.com/nishantkumar-m4c">Nishant Kumar</a></h2>
-  <p>Program Manager, STEP Bihar</p>
+<section class="card glass-card" id="nishantkumar-m4c">
+  <div class="card-header">
+    <img src="https://drive.google.com/uc?export=view&id=1lfHMPyYXgH6szxJr9OjFQnKvuOCZG4x0" alt="Nishant Kumar" class="avatar">
+    <div>
+      <h2><a href="https://github.com/nishantkumar-m4c">Nishant Kumar</a></h2>
+      <p class="role">Program Manager, STEP Bihar</p>
+    </div>
+  </div>
+  <div class="tags">
+    <span class="tag">Driving Education Reform in Bihar</span>
+    <span class="tag">Scaling PBL across 29,000+ Schools</span>
+    <span class="tag">System Leadership</span>
+    <span class="tag">Stakeholder Management</span>
+    <span class="tag">EdTech</span>
+  </div>
+  <div class="links">
+    <a href="https://www.linkedin.com/in/nishant-ns" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:nishant.kumar@mantra4change.com" aria-label="Email" class="icon-link">&#9993;</a>
+  </div>
 </section>
 <!-- ===== END nishantkumar-m4c ===== -->
 
@@ -154,9 +182,9 @@
 
 
 <!-- ===== START akhilskashinath7 ===== -->
-<section class="card" id="akhilskashinath7">
-  <h2><a href="https://github.com/akhilskashinath7">@akhilskashinath7</a></h2>
-  <p class="empty">Unclaimed — edit this block.</p>
+<section class="card" id="akhilskashinath7" style="border-color:#22c55e;background:linear-gradient(180deg,rgba(34,197,94,.10),transparent);box-shadow:0 0 20px rgba(34,197,94,.18);">
+  <h2><a href="https://github.com/akhilskashinath7" style="color:#22c55e;border-bottom-color:#22c55e;">&#127807; @akhilskashinath7</a></h2>
+  <p style="color:#22c55e;margin:0;">Claimed &mdash; shipped straight from the terminal.</p>
 </section>
 <!-- ===== END akhilskashinath7 ===== -->
 
@@ -199,6 +227,7 @@
 <style>
   #Deepthi-jb { transition: transform 0.2s ease, box-shadow 0.2s ease; }
   #Deepthi-jb:hover { transform: translateY(-6px); box-shadow: 0 10px 20px rgba(0,0,0,0.25); }
+
 </style>
 <section class="card" id="Deepthi-jb" style="background: linear-gradient(135deg, #ff6b6b, #f7d794); border-radius: 12px; padding: 16px;">
   <h2 style="color: #2c2c54;">🎨 <a href="https://github.com/Deepthi-jb" style="color: #2c2c54;">@Deepthi-jb</a></h2>
@@ -292,7 +321,12 @@
 </footer>
 
 </body>
-</html>
+</html> <p>Hi, I'm Shalini! I work on program management. Click below to collaborate with me on GitHub.</p>
+  <a href="https://github.com/kumarishalini-sketch" style="display: inline-block; margin-top: 8px; padding: 8px 16px; background: #ffd54f; color: #3e2723; border-radius: 6px; text-decoration: none; font-weight: bold;">View more →</a>
+</section>
+<!-- ===== END kumarishalini-sketch===== -->
+
+
 
 
 
