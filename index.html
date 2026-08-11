@@ -72,12 +72,27 @@
 <!-- ===== END nishantkumar-m4c ===== -->
 
 <!-- ===== START shamakamble-art ===== -->
-<section class="card" id="shamakamble-art" style="background:linear-gradient(135deg,#AEC6E4 0%,#D5C4EC 50%,#C4E7D4 100%); border-left:4px solid #8FB8DE; color:#2E2E3F;">
-  <h2><a href="https://github.com/shamakamble-art" style="color:#33558C;">@shamakamble-art</a></h2>
-  <p style="font-weight:600; color:#2E2E3F;">hi there!</p>
-  <p style="color:#2E2E3F;">Development professional at Mantra4Change &middot; Ex-MGNF Fellow &middot; loves badminton, Kathak &amp; always learning.</p>
+<style>
+  #shamakamble-art{
+    background:linear-gradient(135deg,#AEC6E4,#D5C4EC,#C4E7D4,#FFE0B2,#AEC6E4);
+    background-size:300% 300%;
+    animation:shama-shift 9s ease infinite;
+    border-left:4px solid #8FB8DE; color:#2E2E3F; border-radius:10px;
+  }
+  #shamakamble-art h2 a{ color:#33558C; }
+  #shamakamble-art .wave{ display:inline-block; transform-origin:70% 70%;
+    animation:shama-wave 2.2s ease-in-out infinite; }
+  @keyframes shama-shift{ 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+  @keyframes shama-wave{ 0%,60%,100%{transform:rotate(0)} 10%{transform:rotate(14deg)} 20%{transform:rotate(-8deg)} 30%{transform:rotate(14deg)} 40%{transform:rotate(-4deg)} 50%{transform:rotate(10deg)} }
+</style>
+<section class="card" id="shamakamble-art">
+  <h2><a href="https://github.com/shamakamble-art">@shamakamble-art</a></h2>
+  <p style="font-weight:600;"><span class="wave">👋</span> hi there!</p>
+  <p>Development professional at Mantra4Change &middot; Ex-MGNF Fellow &middot; building for public education.</p>
+  <p style="font-weight:600; margin-top:10px;">Let's keep learning!</p>
 </section>
 <!-- ===== END shamakamble-art ===== -->
+
 
 <!-- ===== START akhilskashinath7 ===== -->
 <section class="card" id="akhilskashinath7">
